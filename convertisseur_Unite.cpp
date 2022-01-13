@@ -1,16 +1,21 @@
 #include <iostream>
+const double METRE_PAR_PIEDS = 3.281;
+const double LIVRE_PAR_GRAMME = 0.002205;
+const double FAHRENHEIT_PAR_CELSIUS = 1.8;
+const double ZERO_CELSIUS_EN_FAHRENHEIT = 32;
+
 
 double metreToPieds(double valeurMetre)
 {
-    return valeurMetre * 3.281;
+    return valeurMetre * METRE_PAR_PIEDS;
 }
 double grammesToLivres(double valeurGrammes)
 {
-    return valeurGrammes * 0.002205;
+    return valeurGrammes * LIVRE_PAR_GRAMME;
 }
 double CelsiusToFahrenheit(double valeurCelsius)
 {
-    return (valeurCelsius * 1.8) + 32;
+    return (valeurCelsius * FAHRENHEIT_PAR_CELSIUS) + ZERO_CELSIUS_EN_FAHRENHEIT;
 }
 
 
