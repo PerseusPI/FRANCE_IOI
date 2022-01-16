@@ -21,7 +21,7 @@ int main()
         digit = 0;
         if(nom1[i] == ' ')
         {
-            for(int j = i + 1;j<nom1.length();j++)
+            for(int j = i + 1;j<(int)(nom1.length());j++)
             {
                 resultat2 = resultat2 + (nom1[j] - 'A');
 
