@@ -8,7 +8,7 @@ int main()
     int resultat = 0;
     int resultat2 = 0;
     int digit = 0;
-    for(int i = 0;i<nom1.length();i++)
+    for(int i = 0;i<int(nom1.length());i++)
     {
         if(nom1[i] != ' ')
             resultat = resultat + (nom1[i] - 'A');
@@ -21,7 +21,7 @@ int main()
         digit = 0;
         if(nom1[i] == ' ')
         {
-            for(int j = i + 1;j<(int)(nom1.length());j++)
+            for(int j = i + 1;j<int(nom1.length());j++)
             {
                 resultat2 = resultat2 + (nom1[j] - 'A');
 
